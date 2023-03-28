@@ -1,0 +1,87 @@
+@import url("https:fonts.googleapis.com");
+@import url("https:fonts.gstatic.com"); 
+@import url("https:fonts.googleapis.com/css2?family=Irish+Grover&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    width: 800px;
+    height: 400px;
+    margin: auto;
+    margin-top: 4rem;
+    display: flex;
+    background-color: rgb(190, 182, 182);
+    border: 1px solid black;
+}
+
+#page-Number {
+    width: 5%;
+}
+
+.content-wrapper {
+    padding: 8px;
+    width: 95%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background-color: rgb(255, 255, 255);
+
+}
+
+.content {
+    width: 100%;
+    padding: 3px;
+    height: fit-content;
+}
+
+.content>* {
+    padding: 1px;
+    height: 6rem;
+    min-height: fit-content;
+    margin-top: 5px;
+    background-color: white;
+    border-radius: 4px;
+    border: 1px solid black;
+}
+
+
+.content p {
+    display: flex;
+    height: fit-content;
+    align-items: center;
+    margin: 0;
+}
+
+
+#loader {
+    animation: spin 1s linear infinite;
+    width: 100px;
+    height: 100px;
+    border: 5px solid black;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-radius: 50%;
+    margin: auto;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+#page-Number{
+    background-color: white;
+    color: blueviolet;
+    font-size: 2.5rem;            
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+}
